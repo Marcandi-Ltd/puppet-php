@@ -17,7 +17,6 @@ define php::pecl::config (
     command => "pecl config-set ${name} ${value} ${layer}",
     path    => $path,
     unless  => "pecl config-get ${name} | grep ${value}",
-    require => Package['php-pear'],
   }
 
 }

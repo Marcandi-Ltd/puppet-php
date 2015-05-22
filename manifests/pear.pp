@@ -24,9 +24,11 @@
 # [*install_options*]
 #   An array of package manager install options. See $php::install_options
 #
+
+# Note: $install_package changed to false
 class php::pear (
   $package         = $php::package_pear,
-  $install_package = true,
+  $install_package = false,
   $install_options = [],
   $version         = 'present',
   $path            = '/usr/bin:/usr/sbin:/bin:/sbin'
