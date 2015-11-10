@@ -11,8 +11,6 @@ define php::pecl::config (
   $path  = '/usr/bin:/bin:/usr/sbin:/sbin'
   ) {
 
-  include php::pear
-
   exec { "pecl-config-set-${name}":
     command => "pecl config-set ${name} ${value} ${layer}",
     path    => $path,

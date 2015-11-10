@@ -120,7 +120,6 @@ define php::pear::module (
         path    => $path,
         unless  => $pear_exec_unless,
         onlyif  => $pear_exec_onlyif,
-        require => $pear_exec_require,
         timeout => $timeout,
       }
     }
